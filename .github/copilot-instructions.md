@@ -1,0 +1,6 @@
+- Verify the project structure and requirements before editing.
+- Keep the app offline-first and demo-safe.
+- Use Node for the Vite app and Python only for the optional model script.
+- Prefer a clean single-page dashboard with good focus states and responsive layouts.
+- Reuse shared franchise data for all KPI and benchmark views.
+- Document any assumptions clearly in the README.

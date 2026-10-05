@@ -1,0 +1,109 @@
+:root {
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #12263a;
+  background: #eef4f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(15, 139, 141, 0.16), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(30, 101, 168, 0.14), transparent 18%),
+    linear-gradient(180deg, #edf4f7 0%, #f3f6f8 100%);
+  color: #12263a;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(15, 139, 141, 0.18), transparent 18%),
+      radial-gradient(circle at bottom right, rgba(42, 100, 160, 0.12), transparent 24%),
+      linear-gradient(180deg, #0c1723 0%, #12263a 100%);
+    color: #ebf5f9;
+  }
+
+  .panel,
+  .stat-card,
+  .tab,
+  .pilot-card,
+  .bar-stack,
+  .chart-card,
+  .mini-metric,
+  .attention-list li {
+    background: rgba(17, 29, 41, 0.9);
+    border-color: rgba(148, 173, 197, 0.12);
+    color: #edf6fb;
+  }
+
+  .score-meta,
+  .panel-header h2,
+  .detail-block h3,
+  .risk-cell span,
+  .mini-metric strong,
+  .stat-card strong,
+  .meta-label,
+  .verdict-card h3,
+  .chart-header,
+  .bar-label,
+  .bar-value,
+  .insight-copy,
+  .expansion-copy,
+  .detail-summary strong,
+  .market-summary strong,
+  .label,
+  .attention-list li,
+  .tab,
+  .hero-copy h2,
+  .hero-copy p {
+    color: #ebf5f9;
+  }
+
+  .muted-tag,
+  .hero-badge {
+    background: rgba(148, 173, 197, 0.14);
+    color: #cfeaf6;
+  }
+
+  .topbar-note,
+  .footnote,
+  .manager-note,
+  .hero-copy p {
+    color: #d0e2ec;
+  }
+
+  .select-wrap select {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(196, 210, 223, 0.16);
+    color: #edf6fb;
+  }
+}

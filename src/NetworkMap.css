@@ -1,0 +1,86 @@
+.nm-wrap{position:relative;display:grid;grid-template-columns:1fr 320px;height:640px;border-radius:16px;overflow:hidden;border:1px solid #cfdde0;background:#e4eef0}
+.nm-map{height:100%;width:100%}
+.nm-view-switch{align-self:flex-end;display:flex;width:max-content;gap:3px;padding:3px;border:1px solid #d8e1dc;border-radius:7px;background:#fffffff2;box-shadow:0 2px 7px #1b302e18}
+.nm-view-switch button{min-height:25px;padding:0 8px;border:0;border-radius:5px;background:transparent;color:#51645b;font-size:9px;font-weight:700;cursor:pointer}
+.nm-view-switch button.active{background:#15564a;color:#fff}
+.market-icon{display:none;place-items:center;border:2px solid #fff;border-radius:50%;background:#c06a49;box-shadow:0 2px 8px #182f2d55;color:white;font-size:9px;font-weight:800}
+.nm-map[data-view=world][data-level=world] .market-icon{display:grid}
+.nm-map[data-view=world]:not([data-level=world]) .market-icon{display:none}
+.intl-wh-icon,.intl-truck-icon{display:none}
+.nm-map[data-view=world][data-level="service area"] .intl-wh-icon,.nm-map[data-view=world][data-level=hub] .intl-wh-icon,.nm-map[data-view=world][data-level=road] .intl-wh-icon{display:block}
+.nm-map[data-view=world][data-level="service area"] .international-corridor,.nm-map[data-view=world][data-level=hub] .international-corridor,.nm-map[data-view=world][data-level=road] .international-corridor{display:initial}
+.nm-map[data-view=world][data-level=hub] .intl-truck-icon,.nm-map[data-view=world][data-level=road] .intl-truck-icon{display:block}
+.nm-map[data-view=world] .wh-icon,.nm-map[data-view=world] .truck-icon,.nm-map[data-view=world] .state-bubble{display:none!important}
+.nm-map[data-view=world] .india-route,.nm-map[data-view=world] .india-fence{display:none!important}
+.nm-map[data-view=india] .market-icon,.nm-map[data-view=india] .intl-wh-icon,.nm-map[data-view=india] .intl-truck-icon,.nm-map[data-view=india] .international-corridor{display:none!important}
+.market-icon span{display:grid;place-items:center;width:100%;height:100%}
+.nm-badge{position:absolute;left:14px;top:14px;z-index:900;background:#0d2b33;color:#fff;padding:6px 9px;border-radius:8px;display:grid;gap:1px;font-size:10px}
+.nm-badge b{font-size:14px}.nm-badge em{opacity:.7;font-size:8px;font-style:normal}
+.nm-panel{background:#fff;padding:12px;overflow:auto;display:flex;flex-direction:column;gap:10px}
+.nm-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.nm-stats div{background:#eef6f6;border-radius:10px;padding:8px;font-size:12px;display:grid}
+.nm-stats b{font-size:22px}.nm-stats .warn{background:#fff3e6}
+.nm-sel{display:grid;gap:3px;font-size:13px;background:#f6fafa;border-radius:10px;padding:10px}.nm-sel.muted{color:#5b7077}
+.nm-panel h4{margin:0;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#5b7077}
+.nm-log{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:12px}
+.nm-log li{border-left:3px solid #9bb;padding-left:7px}.nm-log li.warn{border-color:#e08a00}.nm-log li.ok{border-color:#1a9a5a}
+.nm-log time{display:block;color:#7a8e94;font-size:11px}.nm-note{font-size:11px;color:#7a8e94;margin:0}
+.wh-pin{width:16px;height:16px;border-radius:4px;background:#0b7a75;border:2px solid #fff;box-shadow:0 1px 4px #0006}
+.wh-icon[data-status=Busy] .wh-pin{background:#e0a000}.wh-icon[data-status=Congested] .wh-pin{background:#d33}
+.intl-wh-icon[data-status=Busy] .wh-pin{background:#e0a000}.intl-wh-icon[data-status=Congested] .wh-pin{background:#d33}
+.wh-label,.truck-label{position:absolute;left:20px;top:-2px;white-space:nowrap;font-size:11px;background:#fffffff0;padding:1px 6px;border-radius:6px;display:none}
+.truck-dot{width:12px;height:12px;border-radius:50%;background:#2563eb;border:2px solid #fff;box-shadow:0 1px 4px #0006}
+.truck-icon[data-status=Delayed] .truck-dot{background:#e08a00}.truck-icon[data-status=Unloading] .truck-dot{background:#7c3aed}
+.intl-truck-icon[data-status=Delayed] .truck-dot{background:#e08a00}.intl-truck-icon[data-status=Unloading] .truck-dot{background:#7c3aed}
+.state-bubble{background:#0d2b33;color:#fff;border-radius:19px;display:flex;align-items:center;gap:6px;padding:0 10px;font-size:11px;width:auto!important;height:38px!important;margin:-19px 0 0 -46px!important}
+.state-bubble b{font-size:16px;color:#6ee7d8}
+.nm-map[data-level=state] .wh-label,.nm-map[data-level=area] .wh-label,.nm-map[data-level=road] .wh-label{display:block}
+.nm-map[data-level=area] .truck-label{display:block;top:-2px}.nm-map[data-level=road] .truck-label{display:block}
+.nm-map[data-view=world][data-level=road] .wh-label,.nm-map[data-view=world][data-level=road] .truck-label{display:block}
+.nm-map[data-level=country] .wh-pin{transform:scale(.7)}
+@media(max-width:900px){.nm-wrap{grid-template-columns:1fr;height:auto}.nm-map{height:420px}}
+.nm-refresh{display:flex;align-items:center;justify-content:space-between;gap:8px;color:#73858a;font-size:10px}
+.nm-refresh label{display:flex;align-items:center;gap:6px}
+.nm-refresh select{min-height:28px;border:1px solid #d8e3df;border-radius:6px;background:#fff;color:#29473f;font-size:10px}
+.nm-section-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.nm-section-heading>b{padding:3px 6px;border-radius:5px;background:#fff0df;color:#9b6926;font-size:9px}
+.nm-incident-section{display:grid;gap:8px;padding:10px;border:1px solid #e4ebe5;border-radius:9px;background:#fbfdfb}
+.nm-incident-section h4,.nm-notification-section h4{margin:0}
+.nm-alert-list,.nm-manifest{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+.nm-alert-list li{display:grid;gap:5px;padding:8px;border-left:3px solid #d79737;border-radius:5px;background:#fff8eb}
+.nm-alert-list li.critical{border-color:#c95349;background:#fff1ef}
+.nm-alert-list li.monitoring{border-color:#4d91a5;background:#eef8fb}
+.nm-alert-list li button:first-child{display:grid;gap:3px;padding:0;border:0;background:transparent;color:#344c43;text-align:left;cursor:pointer}
+.nm-alert-list li button:first-child b{font-size:10px}
+.nm-alert-list li button:first-child span{font-size:10px;line-height:1.35}
+.nm-alert-list li button:first-child small{color:#7b8882;font-size:9px}
+.nm-escalate,.nm-contract,.nm-test-alert{min-height:28px;padding:4px 8px;border:1px solid #d5e2d8;border-radius:5px;background:#fff;color:#28634f;font-size:9px;font-weight:700;cursor:pointer}
+.nm-escalate{justify-self:start}
+.nm-automation{display:flex;align-items:center;gap:6px;color:#40564c;font-size:10px}
+.nm-automation input{accent-color:#16775e}
+.nm-delay-reason{padding:7px;border-radius:5px;background:#fff2e3;color:#8a4e21}
+.nm-driver-card{display:flex;align-items:center;gap:9px;padding-top:6px;border-top:1px solid #e7ece8}
+.nm-driver-avatar{width:46px;height:46px;flex:0 0 46px}
+.nm-driver-avatar svg{display:block;width:100%;height:100%}
+.nm-driver-card b,.nm-driver-card small{display:block}
+.nm-driver-card b{color:#27483c}
+.nm-driver-card small{margin-top:2px;color:#7c8b83;font-size:9px}
+.nm-contract,.nm-test-alert{align-self:start}
+.nm-test-alert{border-color:#edd6be;background:#fff7ef;color:#92521e}
+.nm-stop-watch{padding:7px;border:1px solid #cde4e9;border-radius:5px;background:#f0f9fb;color:#376d78;font-size:9px;font-weight:700}
+.nm-manifest{padding-top:3px;border-top:1px solid #e7ece8}
+.nm-manifest li{display:grid;gap:2px;padding:6px 7px;border-radius:5px;background:#f2f7f4}
+.nm-manifest b{font-size:9px;color:#315849}
+.nm-manifest span,.nm-manifest small{font-size:9px;color:#65766d}
+.nm-manifest .nm-eta{color:#28634f;font-weight:700}
+.nm-delivery-history{display:grid;gap:7px;padding:9px;border:1px solid #e4ebe5;border-radius:8px;background:#fff}
+.nm-delivery-history .nm-section-heading>b{background:#e8f5ed;color:#246947}
+.nm-on-time-rate{color:#246947;font-size:20px}
+.nm-on-time-rate span{color:#687b71;font-size:9px;font-weight:500}
+.nm-manifest li.delivered-late{background:#fff4ef}
+.nm-manifest li.delivered-late small:last-child{color:#a45537}
+.nm-manifest li.delivered-on-time small:last-child{color:#28704c}
+.nm-notification-section{display:grid;gap:7px;padding:9px;border:1px solid #e4ebe5;border-radius:8px}
+.nm-notification-section .nm-log{max-height:145px;overflow:auto}
+.nm-sel a{color:#236f5b}
+@media(max-width:900px){.nm-panel{max-height:520px}.nm-map{height:440px}}

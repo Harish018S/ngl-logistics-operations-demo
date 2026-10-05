@@ -1,0 +1,282 @@
+[
+  {
+    "id": "AWB-20261005-23587",
+    "franchise": "delhi",
+    "route": "Delhi \u2192 North",
+    "mode": "Air Freight",
+    "risk": 89,
+    "topFeatures": [
+      "Late pickup",
+      "Document exception",
+      "Hub backlog"
+    ],
+    "likelyCause": "Late pickup and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23372",
+    "franchise": "ambur",
+    "route": "Ambur \u2192 East",
+    "mode": "Ground",
+    "risk": 86,
+    "topFeatures": [
+      "Late pickup",
+      "Document exception",
+      "Hub backlog"
+    ],
+    "likelyCause": "Late pickup and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23734",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 South",
+    "mode": "Air Freight",
+    "risk": 83,
+    "topFeatures": [
+      "Route deviation",
+      "Tracking scan gap",
+      "Document exception"
+    ],
+    "likelyCause": "Route deviation and tracking scan gap may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23497",
+    "franchise": "delhi",
+    "route": "Delhi \u2192 Central",
+    "mode": "Sea Freight",
+    "risk": 82,
+    "topFeatures": [
+      "Document exception",
+      "Hub backlog",
+      "Route deviation"
+    ],
+    "likelyCause": "Document exception and hub backlog may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23534",
+    "franchise": "delhi",
+    "route": "Delhi \u2192 North",
+    "mode": "Sea Freight",
+    "risk": 81,
+    "topFeatures": [
+      "Late pickup",
+      "Weather exposure",
+      "Driver duty hours"
+    ],
+    "likelyCause": "Late pickup and weather exposure may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  },
+  {
+    "id": "AWB-20261005-23365",
+    "franchise": "ambur",
+    "route": "Ambur \u2192 East",
+    "mode": "Air Freight",
+    "risk": 81,
+    "topFeatures": [
+      "Document exception",
+      "Hub backlog",
+      "Late pickup"
+    ],
+    "likelyCause": "Document exception and hub backlog may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23759",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 North",
+    "mode": "Ground",
+    "risk": 81,
+    "topFeatures": [
+      "Tracking scan gap",
+      "Weather exposure",
+      "Route deviation"
+    ],
+    "likelyCause": "Tracking scan gap and weather exposure may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  },
+  {
+    "id": "AWB-20261005-23102",
+    "franchise": "chennai",
+    "route": "Chennai \u2192 Central",
+    "mode": "Air Freight",
+    "risk": 81,
+    "topFeatures": [
+      "Route deviation",
+      "Document exception",
+      "Tracking scan gap"
+    ],
+    "likelyCause": "Route deviation and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23782",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 North",
+    "mode": "Sea Freight",
+    "risk": 81,
+    "topFeatures": [
+      "Document exception",
+      "Tracking scan gap",
+      "Late pickup"
+    ],
+    "likelyCause": "Document exception and tracking scan gap may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23198",
+    "franchise": "mysore",
+    "route": "Mysore \u2192 East",
+    "mode": "Sea Freight",
+    "risk": 80,
+    "topFeatures": [
+      "Late pickup",
+      "Weather exposure",
+      "Tracking scan gap"
+    ],
+    "likelyCause": "Late pickup and weather exposure may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  },
+  {
+    "id": "AWB-20261005-23625",
+    "franchise": "delhi",
+    "route": "Delhi \u2192 South",
+    "mode": "Air Freight",
+    "risk": 79,
+    "topFeatures": [
+      "Tracking scan gap",
+      "Document exception",
+      "Route deviation"
+    ],
+    "likelyCause": "Tracking scan gap and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23182",
+    "franchise": "mysore",
+    "route": "Mysore \u2192 North",
+    "mode": "Sea Freight",
+    "risk": 78,
+    "topFeatures": [
+      "Late pickup",
+      "Tracking scan gap",
+      "Route deviation"
+    ],
+    "likelyCause": "Late pickup and tracking scan gap may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  },
+  {
+    "id": "AWB-20261005-23744",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 North",
+    "mode": "Air Freight",
+    "risk": 78,
+    "topFeatures": [
+      "Tracking scan gap",
+      "Document exception",
+      "Weather exposure"
+    ],
+    "likelyCause": "Tracking scan gap and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23644",
+    "franchise": "delhi",
+    "route": "Delhi \u2192 North-East",
+    "mode": "Sea Freight",
+    "risk": 78,
+    "topFeatures": [
+      "Route deviation",
+      "Route congestion",
+      "Late pickup"
+    ],
+    "likelyCause": "Route deviation and route congestion may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  },
+  {
+    "id": "AWB-20261005-23787",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 North-East",
+    "mode": "Ground",
+    "risk": 77,
+    "topFeatures": [
+      "Late pickup",
+      "Route deviation",
+      "Weather exposure"
+    ],
+    "likelyCause": "Late pickup and route deviation may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  },
+  {
+    "id": "AWB-20261005-23725",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 South",
+    "mode": "Air Freight",
+    "risk": 77,
+    "topFeatures": [
+      "Late pickup",
+      "Tracking scan gap",
+      "Document exception"
+    ],
+    "likelyCause": "Late pickup and tracking scan gap may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23784",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 North-East",
+    "mode": "Ground",
+    "risk": 77,
+    "topFeatures": [
+      "Document exception",
+      "Weather exposure",
+      "Hub backlog"
+    ],
+    "likelyCause": "Document exception and weather exposure may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23716",
+    "franchise": "dubai-pilot",
+    "route": "Dubai \u2192 South",
+    "mode": "Air Freight",
+    "risk": 77,
+    "topFeatures": [
+      "Late pickup",
+      "Document exception",
+      "Tracking scan gap"
+    ],
+    "likelyCause": "Late pickup and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23741",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 Central",
+    "mode": "Sea Freight",
+    "risk": 77,
+    "topFeatures": [
+      "Weather exposure",
+      "Document exception",
+      "Driver duty hours"
+    ],
+    "likelyCause": "Weather exposure and document exception may reduce the available delivery buffer.",
+    "recommendedAction": "Validate the shipment documents and assign a branch owner to confirm clearance."
+  },
+  {
+    "id": "AWB-20261005-23728",
+    "franchise": "malaysia-pilot",
+    "route": "Kuala Lumpur \u2192 East",
+    "mode": "Ground",
+    "risk": 76,
+    "topFeatures": [
+      "Late pickup",
+      "Route deviation",
+      "Hub backlog"
+    ],
+    "likelyCause": "Late pickup and route deviation may reduce the available delivery buffer.",
+    "recommendedAction": "Confirm the pickup appointment and re-sequence the route before dispatch cutoff."
+  }
+]
